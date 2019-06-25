@@ -50,32 +50,41 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Welcome to Festa</h1>
-      <p class="lead">A free and easy way to create catering labels from a spreadsheet.</p>
+      <h2 class="lead">A free and easy way to generate a printable catering label PDFs from an excel spreadsheet.</h2>
     </div>
   </header>
 
   <section id="button">
     <button type="button" onclick="mixpanel.track('Homepage - Create Label Clicked'); window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSec7UmskuZPX6dHiRiqM7muIJg4ralsu3TA6Q1SSn8OkgU5fQ/viewform?usp=sf_link';"  class="btn btn-primary" style="display: block; margin: 0 auto;">Create Catering Labels</button>
-
   </section>
 
-  <section id="about">
-    <img src="images/convert.jpg" style="display: block; margin: 0 auto; max-width: 1000px;">
+  <section id="image">
+    <img src="images/convert.jpg" style="display: block; margin: 0 auto; max-width: 1000px;" alt="convert spreadsheet to catering labels PDF">
+  </section>
+
+  <section id="why">
     <div class="container">
-      <!--
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-          <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul>
-        </div>
-      </div>
-    -->
+      <h2>Catering Label Design</h2>
+      <p class="lead">Each label includes:</p>
+      <ul>
+        <li>Common Title</li>
+        <li>Common Back of Label Text</li>
+        <li>Individual Food Item Name</li>
+        <li>Individual Food Description</li>
+        <li>Individual Food Vegan and Gluten Free Indicators</li>
+      </ul>
+      <img src="images/label-descriptors.jpg" style="max-width: 500px;" alt="catering label content">
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <h2>How Festa Works</h2>
+      <ol>
+        <li>Type a list of your catering items in excel. Column titles should be item_quantity, item_name, item_description, item_vegan, item_glutenfree.<br /><a href="examples/labels_data.xlsx">Download Example Spreadsheet</a></li>
+        <li>Click Create button above and upload this file </li>
+        <li>Download the PDF attachment in your email with your generated labels.<br /><a href="examples/labels_data.xlsx">Download Example Labels PDF Output</a></li>
+      </ol>
     </div>
   </section>
 
